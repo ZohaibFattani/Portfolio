@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#nav a:hover{
+    background-color:red;
+}
+body{
+    background-color: black;
+}
+#jumbotron{
+    background-color: white;
+}

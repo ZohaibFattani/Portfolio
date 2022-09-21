@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+#game{
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid white;
+  /* white div covers border, so adding border box */
+    box-sizing: border-box;
+    background-image: url("assets/gameBackground.webp");
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+}
+#character{
+    /* width: 100px; */
+    /* height: 100px; */
+    /* background-color: red; */
+    position: relative;
+    top: 300px;
+    left: 0px;
+}
+#white{
+    background-color:black;
+    top: 500px;
+    z-index: 100;
+    position: absolute;
+    width: 300px;
+    height: 100px
+}
+#block{
+    top: 500px;
+    position: relative;
+  /* calls the animation */
+    animation: slide 1s infinite linear;
+}
+/* animation to slide down */
+@keyframes slide{
+    0%{top:-100px};
+    100%{top:500px};
+}
+#left{
+    width:50%;
+    position: absolute;
+    height: 500px;
+    /* border: 10px solid blue; */
+}
+#right{
+    width:50%;
+    position: absolute;
+    height: 500px;
+    /* border: 10px solid red; */
+}
+#right{
+    left: 50%;
+}
+#nav{
+    height: 100;
+    width: 100;
+    background-color:black;
+}
+#nav a:hover{
+    background-color:red;
+}
+#intro{
+    height: 100;
+    width: 100;
+    text-align: center;
+    color: orange
+}
+#leftSide{
+    height: 500px;
+    width: 1100px;
+}
+#rightSide{
+    height: 500px;
+    width: 1100px;
+}
+
+#bottom{
+    height: 100;
+    width: 100;
+}
+.main{
+    display: flex;
+    position: relative;
+}
+#jumbotron{
+    background-color: white;
+}
